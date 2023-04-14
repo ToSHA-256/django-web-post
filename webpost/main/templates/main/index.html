@@ -4,7 +4,7 @@
 {% block content %}
     <div class="features">
         <h1>{{ title }}</h1>
-        <p>Lorem</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam ducimus fugit ipsam, iste iure iusto nam necessitatibus nemo nihil omnis, porro quas quidem recusandae repellat sint sunt, tempore ut.</p>
         <button class="btn btn-warning">На страницу</button>
 
         {% for el in values %}
@@ -13,7 +13,7 @@
             {% endif %}
         {% endfor %}
 
-        {{% for el in obj %}
+        {% for el in obj %}
         <p>{{ el }}</p>
         {% endfor %}
     </div>

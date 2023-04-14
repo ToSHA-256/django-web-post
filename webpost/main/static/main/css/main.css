@@ -1,5 +1,5 @@
 body {
-    background: #2A3435;
+    background: white;
 }
 aside {
      float: left;
@@ -52,15 +52,36 @@ aside ul li:hover, aside ul a:hover {
     transform: scale(1.05);
 }
 
-main .features  {
-    float: left;
-    color: #85D3DF;
-    margin-tor: 100px;
-    text-align: center;
-    wight: 75%;
+body {
+    background: white;
+    font-family: Arial, sans-serif;
 }
 
-main .features h1{font-size: 50px;}
-main .features p{font-size: 50px;}
+main {
+    float: left;
+    width: 60%;
+    background: #fff;
+    padding: 10px;
+    margin-left: 250px;
+}
 
+.features {
+    margin-top: 50px;
+    text-align: center;
+}
 
+.features h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.features p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px 30px;
+}
