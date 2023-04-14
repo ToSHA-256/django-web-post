@@ -2,19 +2,23 @@
 
 {% block title %}Новости{% endblock %}
 {% block content %}
-    <div class="features">
-        <h1>Новости на InView</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam ducimus fugit ipsam, iste iure iusto nam necessitatibus nemo nihil omnis, porro quas quidem recusandae repellat sint sunt, tempore ut.</p>
-        <button class="btn btn-warning">На страницу</button>
+<div class="features">
+    <h1>Новости на InView</h1>
 
-        {% for el in values %}
-            {% if el == 'Hello' %}
-                <p>{{ el|upper }}</p>
-            {% endif %}
-        {% endfor %}
+    {% if news %}
+        {% for el in news %}
+            <div class="alert alert-warning">
+                <a href="{% url 'news-detail' el.id %}" class="aside h3 ">{{ el.title }}</a>
+                <p>{{ el.anons }}</p>
+                <p>{{ el.date }}</p>
 
-        {% for el in obj %}
-        <p>{{ el }}</p>
+            </div>
         {% endfor %}
-    </div>
+    {% else %}
+        <p>Записей нет</p>
+    {% endif %}
+
+    {# Коментарий #}
+
+</div>
 {% endblock %}

@@ -19,6 +19,7 @@
     <aside>
        <h3>Навигация</h3>
         <ul>
+            <a href="{% url 'create' %}"><li><button class="btn"><img src="{% static 'main/img/add.png'%}" class="custom-img"></button></li></a>
             <a href="{% url 'home' %}"><li><img src="{% static 'main/img/house-heart.png'%}" class="custom-img"></li></a>
             <a href="{% url 'news_home' %}"><li><img src="{% static 'main/img/address-card.png'%}"  class="custom-img"></li></a>
             <a href="{% url 'about' %}"><li><img src="{% static 'main/img/address-book.png'%}"  class="custom-img"></li></a>

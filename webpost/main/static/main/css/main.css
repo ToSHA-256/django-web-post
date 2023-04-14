@@ -19,7 +19,7 @@ aside img {
 aside .logo {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 300px;
+    margin-top: 150px;
 }
 .custom-img {
       border-radius: 4px;
@@ -27,11 +27,18 @@ aside .logo {
       width: 70px;
 }
 
+
+.btn {
+    border-radius: 0px;
+    padding: 0px;
+    width: 70px;
+}
+
 .custom-logo {
         border-radius: 4px;
-        padding: 5px;
+        padding: 0px;
         width: 200px;
-        margin-top: 400px;
+        margin-top: 350px;
 }
 
 aside h3 {
@@ -81,7 +88,18 @@ main {
     margin-bottom: 20px;
 }
 
-.btn {
-    font-size: 20px;
-    padding: 10px 30px;
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 800px;
+    margin: 20px 12%;
+    text-align: left;
+}
+
+form {
+    margin-left: 22%;
+    width: 600px;
+    margin-top:50px;
+
 }
