@@ -19,13 +19,14 @@
     <aside>
        <h3>Навигация</h3>
         <ul>
-            <a href="{% url 'home' %}"><li><img src="{% static 'main/img/house-heart.png'%}" alt="House" class="custom-img"></li></a>
-            <a href="{% url 'about' %}"><li><img src="{% static 'main/img/address-card.png'%}" alt="About" class="custom-img"></li></a>
-            <a href=""><li><img src="{% static 'main/img/address-book.png'%}" alt="Contact" class="custom-img"></li></a>
+            <a href="{% url 'create' %}"><li><button class="btn"><img src="{% static 'main/img/add.png'%}" class="custom-img"></button></li></a>
+            <a href="{% url 'home' %}"><li><img src="{% static 'main/img/house-heart.png'%}" class="custom-img"></li></a>
+            <a href="{% url 'news_home' %}"><li><img src="{% static 'main/img/address-card.png'%}"  class="custom-img"></li></a>
+            <a href="{% url 'about' %}"><li><img src="{% static 'main/img/address-book.png'%}"  class="custom-img"></li></a>
         </ul>
 
         <img src="{% static 'main/img/InView-preview.png'%}" class="custom-logo" alt="logo">
-        <span class="logo">#JustkeepInView!</span>
+        <span class="logo">#JustKeepInView!</span>
 
     </aside>
     <main>
