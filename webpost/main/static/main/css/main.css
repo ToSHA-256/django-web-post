@@ -88,7 +88,6 @@ main {
     margin-bottom: 20px;
 }
 
-
 .alert-warning {
     float: left;
     clear: both;
@@ -101,5 +100,4 @@ form {
     margin-left: 22%;
     width: 600px;
     margin-top:50px;
-
 }
