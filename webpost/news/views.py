@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Articles
 from .forms import ArticlesForm
 from django.views.generic import DetailView, UpdateView, DeleteView
+from django.contrib.auth.decorators import login_required
 
 
 class NewsDetailView(DetailView):
@@ -23,6 +24,7 @@ class NewsDeleteView(DeleteView):
     template_name = 'news/news-delete.html'
 
 
+@login_required(login_url='/login/')
 def news_home(request):
     news = Articles.objects.order_by('-date')
     return render(request, 'news/news_home.html', {'news': news})

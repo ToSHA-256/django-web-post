@@ -3,6 +3,15 @@
 {% block title %}Главная страница{% endblock %}
 {% block content %}
     <div class="features">
+            {% if user.is_authenticated %}
+                <p>Добро пожаловать, {{ user.username }}!</p>
+                <a href="{% url 'logout_view' %}">Выход</a>
+            {% else %}
+                <p>Пожалуйста, войдите в систему.</p>
+                <a href="{% url 'register' %}">Регистрация</a>
+                <br/>
+                <a href="{% url 'login_view' %}">Войти</a>
+            {% endif %}
         <h1>{{ title }}</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam ducimus fugit ipsam, iste iure iusto nam necessitatibus nemo nihil omnis, porro quas quidem recusandae repellat sint sunt, tempore ut.</p>
         <button class="btn btn-warning">На страницу</button>
